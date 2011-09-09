@@ -1,0 +1,15 @@
+all:
+  isics_image_optim_plugin:
+    class:                            isicsImageOptimService
+    jpeg_adapters:
+      - isicsImageOptimJpegtranAdapter
+    jpeg_nb_pass:                     1
+    png_adapters:
+      - isicsImageOptimPngCrushAdapter
+      - isicsImageOptimOptiPNGAdapter
+      # - isicsImageOptimAdvPNGAdapter
+    png_nb_pass:                      1
+    adapters_options:
+      isicsImageOptimJpegtranAdapter: []
+      isicsImageOptimOptiPNGAdapter:  [level: 2]
+      isicsImageOptimPngcrushAdapter: []

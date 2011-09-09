@@ -1,0 +1,13 @@
+CREDITS
+
+
+
+ImageOptim
+--
+isicsImageOptimPlugin is inspired by ImageOptim (http://imageoptim.pornel.net/), an awesome image optimization tool for Mac OS X users. The icon in the web debug toolbar is the ImageOptim icon.
+
+
+
+npAssetsOptimizerPlugin
+--
+Some parts of the code it contains have been heavily inspired by Nicolas Perriault's npAssetsOptimizerPlugin (https://github.com/n1k0/npAssetsOptimizerPlugin), many thanks to him for the great inspiration.
