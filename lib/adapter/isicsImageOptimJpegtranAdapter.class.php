@@ -22,7 +22,7 @@ class isicsImageOptimJpegtranAdapter implements isicsImageOptimAdapter
     }
 
     $new_file = sprintf('%s.new', $file);
-    exec(sprintf('jpegtran -copy none -optimize -outfile %s %s 2>/dev/null', escapeshellarg($new_file), escapeshellarg($file)), $output, $return);
+    exec(sprintf('jpegtran -copy none -optimize -perfect -progressive -outfile %s %s 2>/dev/null', escapeshellarg($new_file), escapeshellarg($file)), $output, $return);
 
     rename($new_file, $file);
   }
